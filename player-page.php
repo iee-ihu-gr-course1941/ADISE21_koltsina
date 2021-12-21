@@ -17,9 +17,6 @@
             <div class="control">
                 <input type="button" value="2 Player">
             </div>
-            <div class="control">
-                <input type="button" value="4 Player">
-            </div>
         </form>
     </div>
 </section>

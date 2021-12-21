@@ -1,3 +1,3 @@
 function openPage(){
-    window.location.href ="menu-page.php";
+    window.location.href ="connect-page.php";
 }

@@ -13,6 +13,7 @@
 <div class="menu-text">Main Menu</div>
 <section>
     <div class="form-container">
+        <div class="connected-user">username</div>
         <form action="#">
             <div class="control">
                 <input onclick="openPageGame()" type="button" value="New Game">
@@ -21,9 +22,12 @@
                 <input onclick="openPageScores()" type="button" value="Score">
             </div>
             <div class="control">
-                <input onclick="openPageSettings()" type="button" value="Settings">
+                <input onclick="funcLogout()" type="button" value="Logout">
             </div>
         </form>
+        <div class="style-icon" onclick="openPageCredits()">
+            <span class="tooltiptext">Click to see credits</span>
+        </div>
     </div>
 </section>
 </body>

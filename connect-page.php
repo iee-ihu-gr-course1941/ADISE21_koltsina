@@ -18,6 +18,7 @@
                     <label for="name">Name</label>
                     <input type="text" name="name" id="name">
                 </div>
+                <div class="wrong-input">This Name already exists!</div>
                 <div class="control" >
                     <input onclick="openPage()" type="button" value="Enter">
                 </div>

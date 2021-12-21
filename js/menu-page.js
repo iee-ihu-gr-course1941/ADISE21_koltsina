@@ -6,6 +6,10 @@ function openPageScores(){
     window.location.href ="scores-page.php";
 }
 
-function openPageSettings(){
-    window.location.href ="settings-page.php";
+function openPageCredits(){
+    window.location.href ="credits-page.php";
+}
+
+function funcLogout(){
+
 }
