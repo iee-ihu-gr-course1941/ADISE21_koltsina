@@ -1,0 +1,85 @@
+/*.body-style {*/
+/*    background-image:  url(../img/background-background-vapor.jpg);*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover;*/
+/*}*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.welcome-text{
+    text-align: center;
+    position: absolute;
+    font-family: 'Cutive', serif;
+    font-size: 130px;
+    margin-top: 130px;
+    left: 32%;
+    color: cornflowerblue;
+}
+
+.control input{
+    width: 100%;
+    height: 50px;
+    display: block;
+    padding: 10px;
+    color: #222;
+    border: none;
+    outline: none;
+    margin: 1em 0;
+}
+
+.form-container{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    padding: 40px 30px;
+    border-radius: 10px;
+}
+
+.control input[type="button"]{
+    /*background: cornflowerblue;*/
+    background: mediumpurple;
+    color: #fff;
+    font-size: 1.2em;
+    opacity: .8;
+    border-radius: 30px;
+}
+
+.control input[type="button"]:hover{
+    opacity: 1;
+}
+
+/**{*/
+/*    padding: 0;*/
+/*    margin: 0;*/
+/*}*/
+
+/*.welcome-text{*/
+/*    text-align: center;*/
+/*    position: relative;*/
+/*    font-family: 'Cutive', serif;*/
+/*    font-size: 150px;*/
+/*}*/
+
+#particles-js{
+    /*width: 100%;*/
+    /*height: 100vh;*/
+    background-image:  url(../img/background-vapor.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*button {*/
+/*    background-color: #4CAF50; !* Green *!*/
+/*    border: none;*/
+/*    color: white;*/
+/*    padding: 15px 32px;*/
+/*    text-align: center;*/
+/*    text-decoration: none;*/
+/*    display: inline-block;*/
+/*    font-size: 16px;*/
+/*}*/
