@@ -1,0 +1,38 @@
+.connect-text{
+    text-align: center;
+    position: relative;
+    font-family: 'Cutive', serif;
+    font-size: 130px;
+    margin-top: 80px;
+    color: cornflowerblue;
+}
+
+.form-container{
+    box-shadow: 7px 7px 60px #000;
+    text-align: center;
+    width: 300px;
+    margin-top: 100px;
+}
+
+.control input{
+    border-radius: 15px;
+}
+
+.control input[type="button"]{
+    background: cornflowerblue;
+}
+
+
+.control input[type="submit"]{
+    background: cornflowerblue;
+    color: #fff;
+    font-size: 1.2em;
+    opacity: .8;
+    border-radius: 30px;
+}
+
+.control input[type="submit"]:hover{
+    background: cornflowerblue;
+    opacity: 1;
+    cursor: pointer;
+}

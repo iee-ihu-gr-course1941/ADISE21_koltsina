@@ -1,0 +1,24 @@
+.style-icon{
+    background-image: url(../img/info.png);
+    height: 25px;
+    width: 30px;
+    background-repeat: no-repeat;
+    position: absolute;
+    cursor: pointer;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    color: cornflowerblue;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    font-size: 15px;
+}
+
+.style-icon:hover .tooltiptext {
+    visibility: visible;
+}

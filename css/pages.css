@@ -1,66 +1,82 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 .body-style {
     background-image:  url(../img/background-vapor.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.player-text{
-    text-align: center;
-    position: relative;
+    background-color: #6d0459;
     font-family: 'Cutive', serif;
-    font-size: 130px;
-    margin-top: 80px;
     color: cornflowerblue;
 }
 
-section {
-    top: 15%;
+.top-text{
+    text-align: center;
     position: relative;
-    width: 100%;
-}
-
-label{
-    font-family: 'Cutive', serif;
-    font-size: 20px;
+    font-size: 130px;
+    margin-top: 130px;
 }
 
 .form-container{
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
-    width: 380px;
+    width: 200px;
     padding: 40px 30px;
     border-radius: 10px;
-    box-shadow: 7px 7px 60px #000;
+    margin-top: 100px;
 }
 
 .control input{
     width: 100%;
+    height: 50px;
     display: block;
     padding: 10px;
     color: #222;
     border: none;
     outline: none;
     margin: 1em 0;
-    border-radius: 15px;
 }
 
+
 .control input[type="button"]{
-    /*background: cornflowerblue;*/
     background: mediumpurple;
     color: #fff;
     font-size: 1.2em;
     opacity: .8;
+    border-radius: 30px;
 }
 
 .control input[type="button"]:hover{
     opacity: 1;
+    cursor: pointer;
+}
+
+.text{
+    font-family: 'Cutive', serif;
+    color: cornflowerblue;
+}
+
+.text.announcer{
+    text-align: center;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.text.alternate{
+    border: none;
+    background: none;
+    height: 30px;
+    cursor: pointer;
+}
+
+#particles-js{
+    width: 100%;
+    height: 100vh;
+    /*background-image:  url(../img/background-vapor.jpg);*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
 }

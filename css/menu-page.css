@@ -40,6 +40,7 @@ label{
     padding: 40px 30px;
     border-radius: 10px;
     box-shadow: 7px 7px 60px #000;
+    margin-top: unset !important;
 }
 
 .control input{

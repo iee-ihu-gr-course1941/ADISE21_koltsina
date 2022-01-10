@@ -1,107 +1,51 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.person-box{
+    transform: translate(-50%, -50%);
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+    width: 380px;
+    padding: 40px 10px;
+    border-radius: 10px;
+    box-shadow: 7px 7px 60px #000;
 }
 
-.body-style {
-    background-image:  url(../img/background-vapor.jpg);
+.box{
+    height: 120px;
+    width: 100px;
     background-repeat: no-repeat;
     background-size: cover;
+    margin: auto;
 }
-
-.credits-text{
-    text-align: center;
-    position: relative;
-    font-family: 'Cutive', serif;
-    font-size: 110px;
-    margin: 80px 0 20px 0;
-    color: cornflowerblue;
-}
-
-section {
-    top: 15%;
-    position: relative;
-    width: 100%;
-}
-
-label{
-    font-family: 'Cutive', serif;
-    font-size: 20px;
-}
-
-.form-containerA{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
-    width: 380px;
-    padding: 40px 30px;
-    border-radius: 10px;
-    box-shadow: 7px 7px 60px #000;
-}
-
-.form-containerB{
-    position: absolute;
-    top: 50%;
-    right: 55%;
-    transform: translate(-50%, -50%);
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
-    width: 380px;
-    padding: 40px 30px;
-    border-radius: 10px;
-    box-shadow: 7px 7px 60px #000;
-}
-
-.form-containerC{
-    position: absolute;
-    top: 50%;
-    left: 75%;
-    transform: translate(-50%, -50%);
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
-    width: 380px;
-    padding: 40px 30px;
-    border-radius: 10px;
-    box-shadow: 7px 7px 60px #000;
-}
-
-.boxA{
+.box.helen{
     background-image: url(../img/helen.png);
-    height: 120px;
-    width: 100px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-left: 100px;
-    margin-right: 100px;
+}
+.box.olga{
+    background-image: url(../img/olga.jpg);
 }
 
-.boxB{
-    background-image: url(../img/olga.jpg);
-    height: 120px;
-    width: 100px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-left: 100px;
-    margin-right: 100px;
-}
-.boxC{
+.box.orfeas{
     background-image: url(../img/orfeas.jpg);
-    height: 120px;
-    width: 100px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-left: 100px;
-    margin-right: 100px;
 }
 
 .style-text{
     width: 300px;
     margin-top: 20px;
     padding: 1px;
+    margin: auto;
     word-wrap:break-word;
     text-align: center;
     font-weight: bold;
     font-size: 20px;
     color: cornflowerblue;
+}
+
+.credits-container{
+    margin-top: 160px;
+    margin-left: 400px;
+}
+
+.horizontal-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
 }
