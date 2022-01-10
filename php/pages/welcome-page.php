@@ -9,19 +9,24 @@
             @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Cutive&family=Prosto+One&family=Russo+One&family=Share+Tech+Mono&family=Slackey&display=swap');
         </style>
         <script src="../../js/pages/welcome-page.js"></script>
+        <script src="../../js/pages/particles.js"></script>
     </head>
-    <body class="body-style horizontal-flex">
-        <div class="top-text">Welcome</div>
-        <section>
-            <div class="form-container">
-                <div class="control">
-                    <input onclick="openConnectPage()" type="button" value="Start">
+    <div id="particles-js">
+        <body class="body-style horizontal-flex">
+            <div class="top-text">Welcome</div>
+            <section>
+                <div class="form-container">
+                    <div class="control">
+                        <input onclick="openConnectPage()" type="button" value="Start">
+                    </div>
+                    <div class="style-icon" onclick="openCreditsPage()">
+                        <span class="tooltiptext">Click to see credits</span>
+                    </div>
                 </div>
-                <div class="style-icon" onclick="openCreditsPage()">
-                    <span class="tooltiptext">Click to see credits</span>
-                </div>
-            </div>
-        </section>
-    </body>
+            </section>
+        </body>
+        <script type="text/javascript" src="particles.js-master/particles.min.js"></script>
+        <script type="text/javascript" src="particles.js-master/demo/js/app.js"></script>
+    </div>
 </html>
 
