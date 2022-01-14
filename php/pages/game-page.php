@@ -13,11 +13,12 @@
             initGame();
         </script>
     </head>
+
     <body class="body-style">
         <div class="top-text">Game</div>
         <div id="announcer" class="text announcer"></div>
         <div>
-            <div id="game"></div>
+            <div id="game"></div>    
         </div>
     </body>
 </html>

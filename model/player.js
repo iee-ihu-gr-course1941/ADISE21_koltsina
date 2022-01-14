@@ -44,7 +44,7 @@ export class Player {
         for(let i=0; i<deck.length; i++){
             this.cards[i] = new Card (deck[i].id, deck[i].card_number, deck[i].card_shape, deck[i].in_hand, this.id)
             await this.cards[i].updateCardObject()
-        }
+        }   
     }
 
     async getPlayer() {
@@ -54,7 +54,7 @@ export class Player {
     async addDeck(deck) {
         await serverConnect(`POST`, `/addDeck`, `deck=${JSON.stringify(deck)}&in_hand=${0}&player_id=${this.id}`);
     }
-
+    
     async getDeck(in_hand = -1, number_of_cards = 0) {
         return await serverConnect(`GET`, `/getDeck`, `player_id=${this.id}&in_hand=${in_hand}&number_of_cards=${number_of_cards}`);
     }

@@ -68,7 +68,7 @@ export function gameGenerator(game) {
 }
 
 function cardGenerator(player, showCards) {
-
+    
     var symbol;
     var text = ``;
     for(let i=0; i<player.cards.length; i++) {
@@ -76,7 +76,7 @@ function cardGenerator(player, showCards) {
             player.cards[i].card_shape === "Diamonds" ? (symbol = "&diams;") : (symbol = "&" + player.cards[i].card_shape.toLowerCase() + ";"); // &diams, &hearts, &spades, &
             text += `
                 <button id="card${player.cards[i].id}" class="card ${player.cards[i].card_shape.toLowerCase()}">
-                    <span class="card-body top"> ${player.cards[i].card_number} ${symbol} </span>
+                    <span class="card-body top"> ${player.cards[i].card_number} ${symbol} </span> 
                     <span class="card-shape"> ${symbol} </span>
                     <span class="card-body bot"> ${player.cards[i].card_number} ${symbol} </span>
                 </button>
@@ -88,5 +88,6 @@ function cardGenerator(player, showCards) {
             `
         }
     }
-
+    
     document.getElementById(`Deck${player.player_no}`).innerHTML = text;
+}

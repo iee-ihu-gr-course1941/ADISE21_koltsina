@@ -20,9 +20,9 @@ export function connectDiv() {
         document.getElementById("username-text").innerHTML = `You don't have a username`
         document.getElementById("submit-button").value = "Set username"
     }
+        
 
-
-
+    
     document.getElementById("submit-button").addEventListener('click', () => {setSessionUsername()})
     document.getElementById("anonymous-button").addEventListener('click', () => {openBoardPage()})
 }

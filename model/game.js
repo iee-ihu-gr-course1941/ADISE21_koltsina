@@ -27,7 +27,7 @@ export class Game {
             this.players[i] = new Player (players[i].id, players[i].username, players[i].player_no, this.id)
             await this.players[i].updatePlayerObject();
         }
-
+            
     }
 
     async updateTurn() {

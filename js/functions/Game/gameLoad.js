@@ -5,7 +5,7 @@ import { sleep } from "../Util/sleep.js"
 
 
 export async function gameStart() {
-
+    
     if( checkCookie("player_id") ){
         alert("You are already a player.");
         window.location.href = window.location.href;
@@ -20,7 +20,7 @@ export async function gameStart() {
     await game.addPlayer("Table", 0);
     await game.players[0].addDeck(deck);
     await game.updateGameObject();
-    alert(JSON.stringify(game.players[0].cards))
+    // alert(JSON.stringify(game.players[0].cards))
     for (let i=0; i<4; i++){
         game.players[0].cards[i].in_hand = 1;
         game.players[0].cards[i].updateCard();
@@ -40,7 +40,7 @@ export async function gameStart() {
                 break;
         }
     }
-
+        
 
     document.cookie = `player_no=${1}; sameSite=Lax`
     document.cookie = `username=${game.players[1].username}; sameSite=Lax`;
@@ -57,7 +57,7 @@ export async function joinGame(game_id) {
 
     var username = checkCookie("username") ? getCookie("username") : null
     await game.addPlayer(username != null ? username : "Player2", 2);
-
+    
         var cards=0;
         for (let i=0; i<game.players[0].cards.length; i++){
             if(game.players[0].cards[i].in_hand == 0){

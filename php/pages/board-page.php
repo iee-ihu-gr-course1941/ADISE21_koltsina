@@ -12,10 +12,11 @@
             boardDiv();
         </script>
     </head>
+
     <body class="body-style">
-            <div class="top-text">Select a game</div>
-            <div class="form-container">
-                <div id="gameList"></div>
-            </div>
+        <div class="top-text">Select a game</div>
+        <div class="form-container">
+            <div id="gameList"></div>
+        </div>
     </body>
 </html>

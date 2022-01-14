@@ -17,14 +17,14 @@ export function checkGameStatus(p_game) {
     document.getElementById("announcer").innerHTML = "Checking game status..."
     if(deck.length != 0){
         if(player_hand.length == 0)
-            refillPlayer(game, table, player);
+            refillPlayer(game, table, player);        
     }else{
         if (!game.players[1].can_play && !game.players[2].can_play)
             endGame(game);
         if(player_hand.length == 0){
             player.can_play = false;
             endTurn(game);
-        }
+        }        
         if(table_hand.length == 0)
             endGame(game);
     }
@@ -49,7 +49,7 @@ async function refillPlayer(game, p_table, p_player){
 }
 
 export function checkUsernames(p_game){
-
+    
     var game = p_game;
     var player_no = getCookie("player_no")
 
@@ -57,7 +57,7 @@ export function checkUsernames(p_game){
         game.players[player_no].username = getCookie("username")
         game.players[player_no].updatePlayer();
     }
-
+        
 
     for(let i=0; i<game.players.length; i++)
         document.getElementById(`Player${i}Name`).innerHTML = game.players[i].username.split('"')

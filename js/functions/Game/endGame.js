@@ -16,7 +16,7 @@ export function endGame(p_game) {
     game.is_running = false;
     document.getElementById('exit').addEventListener('click', () => {window.location.href = "credits-page.php"})
     document.getElementById("announcer").innerHTML = "The game has ended."
-
+    
     game.deleteGame();
     document.cookie = "game_id=;expires=Thu, 01 Jan 1970;sameSite=Lax";
     document.cookie = "player_no=;expires=Thu, 01 Jan 1970;sameSite=Lax";
@@ -46,7 +46,7 @@ function calculatePoints(p_game) {
         if(player1.cards.card_shape == "Diamond" && player1.cards.card_number == 10)
             pointsp1++;
     }
-
+    
     var clubsp2;
     for(let i=0; i<player2.cards.length; i++){
         if(player2.cards.card_shape == "Club"){
@@ -62,7 +62,7 @@ function calculatePoints(p_game) {
         pointsp1++;
     else
         pointsp2++;
-
+    
     if(pointsp1 > pointsp2)
         return {
             winner: player1,
