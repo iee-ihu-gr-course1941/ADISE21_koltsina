@@ -1,5 +1,5 @@
 <?php
-    $host='~/public_html';
+    $host='~it174951/public_html';
     $user='root';
     $pass=''; // αυτό που ορίσατε κατά το create
     $db = 'koltsinadb';
