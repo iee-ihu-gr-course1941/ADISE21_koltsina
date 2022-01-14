@@ -1,7 +1,7 @@
 <?php
-$user='localhost';
+$user='root';
 $pass='1234';
-$host='https://users.iee.ihu.gr/~it174951/ADISE21_koltsina';
+$host='localhost';
 $db = 'koltsinadb';
 
 
