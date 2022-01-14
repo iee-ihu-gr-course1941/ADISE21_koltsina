@@ -1,5 +1,5 @@
 <?php
-    $host='https://users.iee.ihu.gr';
+    $host='https://users.iee.ihu.gr/~it174951/ADISE21_koltsina';
     $user='root';
     $pass=''; // αυτό που ορίσατε κατά το create
     $db = 'koltsinadb';
