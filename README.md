@@ -21,7 +21,6 @@ Table of Contents
       * [Entities](#entities)
          * [Deck](#deck)
          * [Game](#game)
-         * [Log](#log)
          * [Players](#players)
 
 
@@ -56,9 +55,11 @@ https://users.iee.ihu.gr/it174951/ADISE21_koltsina/php/pages/welcome-page.ph
 # Περιγραφή Παιχνιδιού
 
 Στόχος : 
+
 Να μαζέψεις όσα φύλλα μπορεί από κάτω.
 
 Προετοιμασία Παιχνιδιού :
+
 Μοιράζουμε 4 φύλλα σε κάθε παίχτη και ρίχνουμε 4 φύλλα κάτω το ένα δίπλα στο άλλο ανοιχτά.
 
 Διαδικασία παιχνιδιού : 
