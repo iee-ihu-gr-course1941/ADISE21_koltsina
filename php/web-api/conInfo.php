@@ -1,7 +1,7 @@
 <?php
     $host='https://users.iee.ihu.gr/~it174951/ADISE21_koltsina';
     $user='root';
-    $pass=''; // αυτό που ορίσατε κατά το create
+    $pass='1234'; // αυτό που ορίσατε κατά το create
     $db = 'koltsinadb';
 
     $mysqli = new mysqli($host, $user, $pass, $db);
