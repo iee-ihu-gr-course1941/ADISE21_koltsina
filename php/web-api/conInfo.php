@@ -1,8 +1,8 @@
 <?php
 $user='root';
 $pass='1234';
-$host='localhost';
-$db = 'THE_DB';
+$host='https://users.iee.ihu.gr';
+$db = 'koltsinadb';
 
 
 $mysqli = new mysqli($host, $user, $pass, $db,null,'/home/student/it/2017/it174951/mysql/run/mysql.sock');
