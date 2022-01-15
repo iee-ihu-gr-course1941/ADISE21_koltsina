@@ -6,7 +6,8 @@
 
     $query = "SELECT * FROM Deck WHERE id = $id;";
 
-    $stmt = $mysqli -> query($query);
+$mysqli ="";
+$stmt = $mysqli -> query($query);
 
     if (!empty($stmt) && $stmt->num_rows != 0) {
         $i = 0;

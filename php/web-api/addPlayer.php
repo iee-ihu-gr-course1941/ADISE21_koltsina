@@ -7,8 +7,8 @@ $player_no = $_POST['player_no'];
 $game_id =  $_POST['game_id'];
 
 $query = "INSERT INTO Players (username, player_no, game_id) VALUES ('$username', $player_no, $game_id);";
-$stmt = $mysqli -> query($query);
-
+$mysqli ="";
+$stmt = $mysqli-> query($query);
 $query = "SELECT * FROM Players WHERE player_no = $player_no AND game_id = $game_id;";
 $stmt = $mysqli -> query($query);
 $row = $stmt->fetch_assoc();
