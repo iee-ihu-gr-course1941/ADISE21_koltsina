@@ -1,6 +1,7 @@
 <?php
 
-include('./conInfo.php');
+require_once
+    php/web-api/conInfo.php;
 
 $username =  $_POST['username'];
 $player_no = $_POST['player_no'];

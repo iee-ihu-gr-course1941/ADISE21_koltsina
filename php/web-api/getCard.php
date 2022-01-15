@@ -1,12 +1,12 @@
 <?php
 
-    include('./conInfo.php');
+    require_once('./conInfo.php');
 
     $id = $_GET['id'];
 
     $query = "SELECT * FROM Deck WHERE id = $id;";
 
-$mysqli ="";
+
 $stmt = $mysqli -> query($query);
 
     if (!empty($stmt) && $stmt->num_rows != 0) {
