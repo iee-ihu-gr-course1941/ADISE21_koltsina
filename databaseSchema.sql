@@ -34,3 +34,5 @@ CREATE TABLE IF NOT EXISTS Log (
     logger text(10000),
     PRIMARY KEY (id)
 );
+
+INSERT INTO Game (id, turn) VALUES (1, 1);
