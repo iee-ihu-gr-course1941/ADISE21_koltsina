@@ -1,6 +1,6 @@
 <?php
 $user='root';
-$pass='1234';
+$pass='Piperomania1.';
 $host='localhost';
 $db = 'koltsinadb';
 
