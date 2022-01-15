@@ -2,6 +2,7 @@ import { getCookie } from "../Util/cookies.js";
 import { gameGenerator } from "../../pages/game-page.js"
 import { gameplay, endTurn } from "./gameplay.js"
 import { endGame } from "./endGame.js"
+import { sleep } from "../Util/sleep.js"
 
 export function checkGameStatus(p_game) {
 
@@ -17,14 +18,14 @@ export function checkGameStatus(p_game) {
     document.getElementById("announcer").innerHTML = "Checking game status..."
     if(deck.length != 0){
         if(player_hand.length == 0)
-            refillPlayer(game, table, player);        
+            refillPlayer(game, table, player);
     }else{
         if (!game.players[1].can_play && !game.players[2].can_play)
             endGame(game);
         if(player_hand.length == 0){
             player.can_play = false;
             endTurn(game);
-        }        
+        }
         if(table_hand.length == 0)
             endGame(game);
     }
@@ -49,7 +50,7 @@ async function refillPlayer(game, p_table, p_player){
 }
 
 export function checkUsernames(p_game){
-    
+
     var game = p_game;
     var player_no = getCookie("player_no")
 

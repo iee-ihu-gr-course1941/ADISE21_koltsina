@@ -10,19 +10,21 @@ export async function gameplay(p_game) {
     checkGameStatus(game)
     if(turn != getCookie("player_no"))
         document.getElementById("announcer").innerHTML = "It's the opponent's turn to play. Please wait..."
-    
+
     while(turn != getCookie("player_no")) {
         sleep(500);
         turn = await game.getTurn()
     }
 
     await game.updateGameObject();
+    sleep(500);
+
     gameGenerator(game)
     escalateTurn(game)
 }
 
 async function escalateTurn(p_game) {
-    
+
     var game = p_game;
     console.log(JSON.stringify(game));
     checkUsernames(game);
@@ -34,17 +36,17 @@ async function escalateTurn(p_game) {
     var player_hand = player.cards.filter(card => card.in_hand == 1)
 
     checkGameStatus(game)
-        
+
     document.getElementById("announcer").innerHTML = "Calculating moves..."
     var moves = calculateMoves(player_hand, table_hand);
     if(moves.length == 0){
         for(let i=0; i<player_hand.length; i++){
-            document.getElementById(`card${player_hand[i].id}`).style.border = "3px solid red"; 
+            document.getElementById(`card${player_hand[i].id}`).style.border = "3px solid red";
             document.getElementById(`card${player_hand[i].id}`).addEventListener('click', () => changeOwnership(game, table, player_hand[i], false))
-        }            
+        }
     }else{
         for(let i=0; i<moves.length; i++){
-            document.getElementById(`card${moves[i].hand.id}`).style.border = "3px solid red"; 
+            document.getElementById(`card${moves[i].hand.id}`).style.border = "3px solid red";
             document.getElementById(`card${moves[i].hand.id}`).addEventListener('click', () => changeOwnership(game, player, moves[i], true))
         }
     }
@@ -70,10 +72,10 @@ function calculateMoves(hand, deck) {
 
 
 async function changeOwnership(game, p_nextOwner, card, toPlayer) {
-    
+
     document.getElementById("announcer").innerHTML = "Making move..."
     var nextOwner = p_nextOwner;
-    
+
     if(toPlayer){ //has move/moves to hand
         card.hand.in_hand = 0;
 
@@ -90,7 +92,7 @@ async function changeOwnership(game, p_nextOwner, card, toPlayer) {
 
     endTurn(game);
 
-    
+
 }
 
 export async function endTurn(p_game) {
