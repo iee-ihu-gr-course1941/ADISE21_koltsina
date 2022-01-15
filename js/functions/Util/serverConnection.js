@@ -22,7 +22,7 @@ export async function serverConnect(method, url, params = null, async = true){
         myResolve("File not Found");
       }
     };
-    xhttp.send(((method == "POST"  && params != null) ? params : ""));
+    xcheckhttp.send(((method == "POST"  && params != null) ? params : ""));
   });
 
 }
