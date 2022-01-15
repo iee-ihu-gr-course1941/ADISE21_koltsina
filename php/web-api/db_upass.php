@@ -1,5 +1,5 @@
 <?php
 
-$DB_PASS = '1234';
+$DB_PASS = 'Piperomania1.';
 $DB_USER = 'root';
 ?>
