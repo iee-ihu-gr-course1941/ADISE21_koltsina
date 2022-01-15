@@ -16,7 +16,7 @@
          * [Deck](#deck)
          * [Game](#game)
          * [Players](#players)
-    * [Game Status](#game-status)
+   * [Game Status](#game-status)
 
 
 # Demo Page
