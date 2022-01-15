@@ -1,4 +1,4 @@
-//import { checkCookie } from "../functions/Util/cookies.js";
+import { checkCookie } from "../functions/Util/cookies.js";
 import { gameStart, joinGame } from "../functions/Game/gameLoad.js";
 import { Game } from "../../model/game.js"
 import { Server } from "../../model/server.js";
