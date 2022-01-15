@@ -12,12 +12,11 @@
          * [Deck](#deck)
             * [Ανάγνωση Θέσης/Πιονιού](#ανάγνωση-θέσηςπιονιού)
             * [Μεταβολή Θέσης Πιονιού](#μεταβολή-θέσης-πιονιού)
-         * [Status](#status)
-            * [Ανάγνωση κατάστασης παιχνιδιού](#ανάγνωση-κατάστασης-παιχνιδιού)
       * [Entities](#entities)
          * [Deck](#deck)
          * [Game](#game)
          * [Players](#players)
+    * [Game Status](#game-status)
 
 
 # Demo Page
@@ -97,60 +96,31 @@ https://users.iee.ihu.gr/~it174951/ADISE21_koltsina/php/pages/welcome-page.php
 
 
 ### Board
-#### Ανάγνωση Board
-
-import { boardDiv }
-
-Επιστρέφει το [Board](#Board).
 
 #### Αρχικοποίηση Board
 
-serverConnect(`POST`, `/addGame`, `turn=${this.turn}`).then(
-            (id) => {
-                this.id = id;
-            }
-);
+```
+POST['deck']
+POST['in_hand']
+POST['player_id']
 
-Αρχικοποιεί το Board, δηλαδή το παιχνίδι. Γίνονται reset τα πάντα σε σχέση με το παιχνίδι.
+INSERT INTO Deck (card_number, card_shape, in_hand, player_id) VALUES
+```
+Τα αρχεία addGame.php, addPlayer.php, addDeck.php συντελούν στην αρχικοποίηση του board. Γίνονται reset τα πάντα σε σχέση με το παιχνίδι.
 Επιστρέφει το [Board](#Board).
 
 ### Deck
 
-Συνδυάζει την CardBuilder και CardRandomizer για να δημιουργήσει μια τυχαία τράπουλα.
+Προσθέτει τα στοιχεία της τράπουλας στην βάση και τα επιστρέφει κατάλληλα.
 ```
-DeckCreator
-```
-
-Αρχικοποιεί την τράπουλα που θα χρησιμοποιήσει το παιχνίδι.
-```
-CardBuilder
+json_decode($_POST['deck'])
+$_POST['in_hand'];
 ```
 
-Αλλάζει την σειρά των καρτών στη τράπουλα έτσι ώστε να είναι σε τυχαία σειρά .
+Δημιουργεί παρτίδα.
 ```
-CardRandomizer
+$_POST['turn']
 ```
-
-Ελέγχει πόσες και ποιές καρτες βρισκονται στα χέρια των παικτών και ανάλογα ξαναγεμίζει το χέρι τους η λήγει το παιχνίδι.
-```
-checkGameStatus
-```
-
-Ελέγχει πόσες και ποιές καρτες βρισκονται στα χέρια των παικτών και ανάλογα ξαναγεμίζει το χέρι τους η λήγει το παιχνίδι.
-```
-checkGameStatus
-```
- 
-### Status
-
-#### Ανάγνωση κατάστασης παιχνιδιού
-```
-GET /status/
-```
-
-Επιστρέφει το στοιχείο [Game_status](#Game_status).
-
-
 
 ## Entities
 
@@ -194,4 +164,12 @@ GET /status/
 | `id`                     | Το id του κάθε παίκτη.                       | 1..infinity                         |
 | `username`               | Δείχνει το username των παικτων.             | 'Α'...'Ζ'                           |
 | `player_no`              | Δείχνει τους παίκτες αριθμημένους.           | 1,2                                 |
-| `game_id`                | Δείχνει το id κάθε παιχνιδιού.               | 1..infinity                        |
+| `game_id`                | Δείχνει το id κάθε παιχνιδιού.               | 1..infinity                         |
+
+# Game Status
+
+Το παιχνίδι τελειώνει όταν το deck.length == 0 δηλαδή δεν μπορεί να πραγματοποιηθεί refill καρτών ή αν δεν μπορεί να παίξει κανένας παίκτης δηλαδή οι κάτρες στο χέρι είναι μηδέν.
+
+```
+endGame()
+```
