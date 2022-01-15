@@ -1,4 +1,4 @@
-import { checkCookie } from "../functions/Util/cookies.js";
+//import { checkCookie } from "../functions/Util/cookies.js";
 import { gameStart, joinGame } from "../functions/Game/gameLoad.js";
 import { Game } from "../../model/game.js"
 import { Server } from "../../model/server.js";
@@ -18,7 +18,7 @@ export async function boardDiv() {
         document.getElementById('existingJoinButton').addEventListener('click', () => {openGamePage()});
     }else{
         var games = [];
-        
+
         var server = new Server;
         await server.getGames().then(
             (p_games) => {
@@ -56,8 +56,8 @@ export async function boardDiv() {
                 document.getElementById(`joinButton${games[i].id}`).value = `Join existing game with ID ${games[i].id}`
                 document.getElementById(`joinButton${games[i].id}`).addEventListener('click', () => {joinGame(games[i].id)})
             }
-        }    
-    } 
+        }
+    }
 }
 
 export function openGamePage(){
