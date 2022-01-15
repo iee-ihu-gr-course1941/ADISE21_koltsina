@@ -1,6 +1,8 @@
 <?php
 
     include('./conInfo.php');
+    require_once "db_upass.php";
+
 
     $id = $_GET['id'];
     $query = "SELECT * FROM Game WHERE id = $id;";
