@@ -57,8 +57,8 @@ export function checkUsernames(p_game){
         game.players[player_no].username = getCookie("username")
         game.players[player_no].updatePlayer();
     }
-        
 
+    console.log(JSON.stringify(game));
     for(let i=0; i<game.players.length; i++)
         document.getElementById(`Player${i}Name`).innerHTML = game.players[i].username.split('"')
 }
