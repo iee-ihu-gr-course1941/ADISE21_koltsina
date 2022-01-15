@@ -16,7 +16,7 @@
 <body class="body-style">
     <div class="top-text">Connect</div>
     <section>
-        <div class="form-container">
+        <div class="form-container style-margin">
             <div id="username-text" class="text" style="font-size:15px"></div>
             <br></br>
             <div id="label" class="text" style="font-size:20px">Name</div>
