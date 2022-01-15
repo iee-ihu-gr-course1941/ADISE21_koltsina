@@ -22,7 +22,7 @@ export async function serverConnect(method, url, params = null, async = true){
         myResolve();
       }
     };
-    xcheckhttp.send(((method == "POST"  && params != null) ? params : ""));
+    xhttp.send(((method == "POST"  && params != null) ? params : ""));
   });
 
 }
