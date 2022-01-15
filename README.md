@@ -107,7 +107,7 @@ POST['player_id']
 INSERT INTO Deck (card_number, card_shape, in_hand, player_id) VALUES
 ```
 Τα αρχεία addGame.php, addPlayer.php, addDeck.php συντελούν στην αρχικοποίηση του board. Γίνονται reset τα πάντα σε σχέση με το παιχνίδι.
-Επιστρέφει το [Board](#Board).
+Tο [Board](#Board) επιστρέφεται αφού συνδεθεί και ο δεύτερος παίκτης.
 
 ### Deck
 
