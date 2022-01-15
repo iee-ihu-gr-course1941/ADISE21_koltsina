@@ -1,6 +1,6 @@
 <?php
 $host='localhost';
-$db = 'THE_DB';
+$db = 'koltsinadb';
 require_once "db_upass.php";
 
 $user=$DB_USER;
