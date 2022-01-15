@@ -4,12 +4,12 @@
 }
 
 .body-style {
-    background-image:  url(../img/background-vapor.jpg);
+    background-image:  url(../img/cards-background.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #6d0459;
+    background-color: #004d1a ;
     font-family: 'Cutive', serif;
-    color: cornflowerblue;
+    color:#b30000;;
 }
 
 .top-text{
@@ -61,7 +61,7 @@
 
 .text{
     font-family: 'Cutive', serif;
-    color: cornflowerblue;
+    color: #ff6666;
 }
 
 .text.announcer{

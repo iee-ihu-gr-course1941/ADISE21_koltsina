@@ -5,13 +5,13 @@
     font-size: 130px;
     margin-top: 80px;
     /*color: #e10164;*/
-    color: cornflowerblue;
+    color: #b30000;
 }
 
 label{
     font-family: 'Cutive', serif;
     font-size: 20px;
-    color: cornflowerblue;
+    color: #b30000;
 }
 
 .form-container{
@@ -26,5 +26,5 @@ label{
 }
 
 .control input[type="button"]{
-    background: cornflowerblue;
+    background: #b30000;
 }

@@ -4,7 +4,7 @@
     font-family: 'Cutive', serif;
     font-size: 130px;
     margin-top: 80px;
-    color: cornflowerblue;
+    color: red;
 }
 
 .form-container{
@@ -19,12 +19,12 @@
 }
 
 .control input[type="button"]{
-    background: cornflowerblue;
+    background: #cc0000;
 }
 
 
 .control input[type="submit"]{
-    background: cornflowerblue;
+    background: #b30000;
     color: #fff;
     font-size: 1.2em;
     opacity: .8;
@@ -32,7 +32,7 @@
 }
 
 .control input[type="submit"]:hover{
-    background: cornflowerblue;
+    background: #b30000;
     opacity: 1;
     cursor: pointer; 
 }
