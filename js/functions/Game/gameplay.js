@@ -24,7 +24,7 @@ export async function gameplay(p_game) {
 async function escalateTurn(p_game) {
     
     var game = p_game;
-
+    console.log(JSON.stringify(game));
     checkUsernames(game);
 
     var table = game.players[0];
