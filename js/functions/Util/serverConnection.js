@@ -10,7 +10,6 @@ export async function serverConnect(method, url, params = null, async = true){
 
     xhttp.onload = function() {
       if (xhttp.readyState == 4 && xhttp.status == 200) {
-        // alert(url + " " + xhttp.responseText);
         if(xhttp.responseText){
           var json = JSON.parse(xhttp.responseText);
           myResolve(json);
