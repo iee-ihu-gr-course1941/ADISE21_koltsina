@@ -5,6 +5,6 @@
 		$uri = 'http://';
 	}
 	$uri .= $_SERVER['HTTP_HOST'];
-	header('Location: '.$uri.'/mysql/KoltsinaProduction/php/pages/welcome-page.php');
+	header('Location: '.$uri.'/mysql/ADISE21_koltsina/php/pages/welcome-page.php');
 	exit;
 ?>
