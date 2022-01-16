@@ -32,7 +32,6 @@ https://users.iee.ihu.gr/~it174913/ADISE21_koltsina/php/pages/welcome-page.php
 
 ## Απαιτήσεις
 
-* Apache2
 * Mysql Server
 * php
 * phpMyAdmin
